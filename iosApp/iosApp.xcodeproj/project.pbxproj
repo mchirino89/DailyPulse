@@ -1,0 +1,1814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
+		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
+		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
+		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7555FFB4242A642300829871 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		66AD00002BB0874800187F09 /* Platform.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.kt; sourceTree = "<group>"; };
+		66AD00012BB0874800187F09 /* Greeting.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Greeting.kt; sourceTree = "<group>"; };
+		66AD00072BB0874800187F09 /* Platform.android.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.android.kt; sourceTree = "<group>"; };
+		66ADFEF22BB0874800187F09 /* build.gradle.kts */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle.kts; sourceTree = "<group>"; };
+		66ADFEFC2BB0874800187F09 /* results.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = results.bin; sourceTree = "<group>"; };
+		66ADFEFF2BB0874800187F09 /* results.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = results.bin; sourceTree = "<group>"; };
+		66ADFF022BB0874800187F09 /* desugar_graph.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = desugar_graph.bin; sourceTree = "<group>"; };
+		66ADFF062BB0874800187F09 /* Greeting.dex */ = {isa = PBXFileReference; lastKnownFileType = file; path = Greeting.dex; sourceTree = "<group>"; };
+		66ADFF072BB0874800187F09 /* Platform.dex */ = {isa = PBXFileReference; lastKnownFileType = file; path = Platform.dex; sourceTree = "<group>"; };
+		66ADFF082BB0874800187F09 /* Platform_androidKt.dex */ = {isa = PBXFileReference; lastKnownFileType = file; path = Platform_androidKt.dex; sourceTree = "<group>"; };
+		66ADFF092BB0874800187F09 /* AndroidPlatform.dex */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidPlatform.dex; sourceTree = "<group>"; };
+		66ADFF0D2BB0874800187F09 /* last-build.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "last-build.bin"; sourceTree = "<group>"; };
+		66ADFF102BB0874800187F09 /* file-to-id.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.values.at"; sourceTree = "<group>"; };
+		66ADFF112BB0874800187F09 /* lookups.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.keystream.len; sourceTree = "<group>"; };
+		66ADFF122BB0874800187F09 /* file-to-id.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab"; sourceTree = "<group>"; };
+		66ADFF132BB0874800187F09 /* file-to-id.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab_i"; sourceTree = "<group>"; };
+		66ADFF142BB0874800187F09 /* file-to-id.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.keystream"; sourceTree = "<group>"; };
+		66ADFF152BB0874800187F09 /* file-to-id.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.keystream.len"; sourceTree = "<group>"; };
+		66ADFF162BB0874800187F09 /* lookups.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab_i.len; sourceTree = "<group>"; };
+		66ADFF172BB0874800187F09 /* lookups.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab_i; sourceTree = "<group>"; };
+		66ADFF182BB0874800187F09 /* id-to-file.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.keystream.len"; sourceTree = "<group>"; };
+		66ADFF192BB0874800187F09 /* id-to-file.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.len"; sourceTree = "<group>"; };
+		66ADFF1A2BB0874800187F09 /* file-to-id.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.len"; sourceTree = "<group>"; };
+		66ADFF1B2BB0874800187F09 /* counters.tab */ = {isa = PBXFileReference; lastKnownFileType = text; path = counters.tab; sourceTree = "<group>"; };
+		66ADFF1C2BB0874800187F09 /* file-to-id.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab_i.len"; sourceTree = "<group>"; };
+		66ADFF1D2BB0874800187F09 /* lookups.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.keystream; sourceTree = "<group>"; };
+		66ADFF1E2BB0874800187F09 /* lookups.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.values.at; sourceTree = "<group>"; };
+		66ADFF1F2BB0874800187F09 /* id-to-file.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab"; sourceTree = "<group>"; };
+		66ADFF202BB0874800187F09 /* lookups.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab; sourceTree = "<group>"; };
+		66ADFF212BB0874800187F09 /* id-to-file.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.keystream"; sourceTree = "<group>"; };
+		66ADFF222BB0874800187F09 /* id-to-file.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab_i"; sourceTree = "<group>"; };
+		66ADFF232BB0874800187F09 /* id-to-file.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab_i.len"; sourceTree = "<group>"; };
+		66ADFF242BB0874800187F09 /* lookups.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.len; sourceTree = "<group>"; };
+		66ADFF252BB0874800187F09 /* id-to-file.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.values.at"; sourceTree = "<group>"; };
+		66ADFF282BB0874800187F09 /* complementary-files.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.keystream"; sourceTree = "<group>"; };
+		66ADFF292BB0874800187F09 /* complementary-files.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.keystream.len"; sourceTree = "<group>"; };
+		66ADFF2A2BB0874800187F09 /* complementary-files.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab_i.len"; sourceTree = "<group>"; };
+		66ADFF2B2BB0874800187F09 /* subtypes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab_i; sourceTree = "<group>"; };
+		66ADFF2C2BB0874800187F09 /* source-to-classes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.len"; sourceTree = "<group>"; };
+		66ADFF2D2BB0874800187F09 /* class-attributes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-attributes.tab"; sourceTree = "<group>"; };
+		66ADFF2E2BB0874800187F09 /* class-fq-name-to-source.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab_i.len"; sourceTree = "<group>"; };
+		66ADFF2F2BB0874800187F09 /* class-fq-name-to-source.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.len"; sourceTree = "<group>"; };
+		66ADFF302BB0874800187F09 /* subtypes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab_i.len; sourceTree = "<group>"; };
+		66ADFF312BB0874800187F09 /* complementary-files.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab"; sourceTree = "<group>"; };
+		66ADFF322BB0874800187F09 /* complementary-files.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab_i"; sourceTree = "<group>"; };
+		66ADFF332BB0874800187F09 /* supertypes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.len; sourceTree = "<group>"; };
+		66ADFF342BB0874800187F09 /* proto.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.keystream.len; sourceTree = "<group>"; };
+		66ADFF352BB0874800187F09 /* complementary-files.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.values.at"; sourceTree = "<group>"; };
+		66ADFF362BB0874800187F09 /* subtypes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.keystream.len; sourceTree = "<group>"; };
+		66ADFF372BB0874800187F09 /* package-parts.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab"; sourceTree = "<group>"; };
+		66ADFF382BB0874800187F09 /* source-to-classes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.keystream.len"; sourceTree = "<group>"; };
+		66ADFF392BB0874800187F09 /* internal-name-to-source.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.len"; sourceTree = "<group>"; };
+		66ADFF3A2BB0874800187F09 /* source-to-classes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab"; sourceTree = "<group>"; };
+		66ADFF3B2BB0874800187F09 /* internal-name-to-source.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.keystream"; sourceTree = "<group>"; };
+		66ADFF3C2BB0874800187F09 /* source-to-classes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.keystream"; sourceTree = "<group>"; };
+		66ADFF3D2BB0874800187F09 /* supertypes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab_i; sourceTree = "<group>"; };
+		66ADFF3E2BB0874800187F09 /* class-fq-name-to-source.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.keystream.len"; sourceTree = "<group>"; };
+		66ADFF3F2BB0874800187F09 /* source-to-classes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab_i.len"; sourceTree = "<group>"; };
+		66ADFF402BB0874800187F09 /* internal-name-to-source.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab_i"; sourceTree = "<group>"; };
+		66ADFF412BB0874800187F09 /* class-fq-name-to-source.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.keystream"; sourceTree = "<group>"; };
+		66ADFF422BB0874800187F09 /* internal-name-to-source.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.keystream.len"; sourceTree = "<group>"; };
+		66ADFF432BB0874800187F09 /* package-parts.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab_i"; sourceTree = "<group>"; };
+		66ADFF442BB0874800187F09 /* internal-name-to-source.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab"; sourceTree = "<group>"; };
+		66ADFF452BB0874800187F09 /* internal-name-to-source.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.values.at"; sourceTree = "<group>"; };
+		66ADFF462BB0874800187F09 /* supertypes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab; sourceTree = "<group>"; };
+		66ADFF472BB0874800187F09 /* source-to-classes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.values.at"; sourceTree = "<group>"; };
+		66ADFF482BB0874800187F09 /* package-parts.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab_i.len"; sourceTree = "<group>"; };
+		66ADFF492BB0874800187F09 /* class-fq-name-to-source.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.values.at"; sourceTree = "<group>"; };
+		66ADFF4A2BB0874800187F09 /* source-to-classes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab_i"; sourceTree = "<group>"; };
+		66ADFF4B2BB0874800187F09 /* subtypes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.len; sourceTree = "<group>"; };
+		66ADFF4C2BB0874800187F09 /* subtypes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.values.at; sourceTree = "<group>"; };
+		66ADFF4D2BB0874800187F09 /* internal-name-to-source.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab_i.len"; sourceTree = "<group>"; };
+		66ADFF4E2BB0874800187F09 /* subtypes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab; sourceTree = "<group>"; };
+		66ADFF4F2BB0874800187F09 /* class-attributes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-attributes.tab_i.len"; sourceTree = "<group>"; };
+		66ADFF502BB0874800187F09 /* package-parts.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.values.at"; sourceTree = "<group>"; };
+		66ADFF512BB0874800187F09 /* class-attributes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-attributes.tab.len"; sourceTree = "<group>"; };
+		66ADFF522BB0874800187F09 /* class-attributes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-attributes.tab_i"; sourceTree = "<group>"; };
+		66ADFF532BB0874800187F09 /* subtypes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.keystream; sourceTree = "<group>"; };
+		66ADFF542BB0874800187F09 /* proto.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab; sourceTree = "<group>"; };
+		66ADFF552BB0874800187F09 /* proto.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.len; sourceTree = "<group>"; };
+		66ADFF562BB0874800187F09 /* package-parts.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.keystream"; sourceTree = "<group>"; };
+		66ADFF572BB0874800187F09 /* class-fq-name-to-source.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab"; sourceTree = "<group>"; };
+		66ADFF582BB0874800187F09 /* class-attributes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-attributes.tab.keystream.len"; sourceTree = "<group>"; };
+		66ADFF592BB0874800187F09 /* package-parts.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.keystream.len"; sourceTree = "<group>"; };
+		66ADFF5A2BB0874800187F09 /* proto.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.keystream; sourceTree = "<group>"; };
+		66ADFF5B2BB0874800187F09 /* supertypes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab_i.len; sourceTree = "<group>"; };
+		66ADFF5C2BB0874800187F09 /* class-attributes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-attributes.tab.values.at"; sourceTree = "<group>"; };
+		66ADFF5D2BB0874800187F09 /* supertypes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.values.at; sourceTree = "<group>"; };
+		66ADFF5E2BB0874800187F09 /* complementary-files.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.len"; sourceTree = "<group>"; };
+		66ADFF5F2BB0874800187F09 /* supertypes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.keystream.len; sourceTree = "<group>"; };
+		66ADFF602BB0874800187F09 /* class-fq-name-to-source.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab_i"; sourceTree = "<group>"; };
+		66ADFF612BB0874800187F09 /* proto.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab_i.len; sourceTree = "<group>"; };
+		66ADFF622BB0874800187F09 /* proto.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.values.at; sourceTree = "<group>"; };
+		66ADFF632BB0874800187F09 /* class-attributes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-attributes.tab.keystream"; sourceTree = "<group>"; };
+		66ADFF642BB0874800187F09 /* proto.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab_i; sourceTree = "<group>"; };
+		66ADFF652BB0874800187F09 /* package-parts.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.len"; sourceTree = "<group>"; };
+		66ADFF662BB0874800187F09 /* supertypes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.keystream; sourceTree = "<group>"; };
+		66ADFF682BB0874800187F09 /* source-to-output.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab_i"; sourceTree = "<group>"; };
+		66ADFF692BB0874800187F09 /* source-to-output.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.keystream.len"; sourceTree = "<group>"; };
+		66ADFF6A2BB0874800187F09 /* source-to-output.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab"; sourceTree = "<group>"; };
+		66ADFF6B2BB0874800187F09 /* source-to-output.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab_i.len"; sourceTree = "<group>"; };
+		66ADFF6C2BB0874800187F09 /* source-to-output.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.keystream"; sourceTree = "<group>"; };
+		66ADFF6D2BB0874800187F09 /* source-to-output.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.len"; sourceTree = "<group>"; };
+		66ADFF6E2BB0874800187F09 /* source-to-output.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.values.at"; sourceTree = "<group>"; };
+		66ADFF702BB0874800187F09 /* shrunk-classpath-snapshot.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "shrunk-classpath-snapshot.bin"; sourceTree = "<group>"; };
+		66ADFF722BB0874800187F09 /* build-history.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "build-history.bin"; sourceTree = "<group>"; };
+		66ADFF782BB0874800187F09 /* shared_debug.kotlin_module */ = {isa = PBXFileReference; lastKnownFileType = file; path = shared_debug.kotlin_module; sourceTree = "<group>"; };
+		66ADFF7C2BB0874800187F09 /* Platform.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Platform.class; sourceTree = "<group>"; };
+		66ADFF7D2BB0874800187F09 /* Platform_androidKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Platform_androidKt.class; sourceTree = "<group>"; };
+		66ADFF7E2BB0874800187F09 /* AndroidPlatform.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AndroidPlatform.class; sourceTree = "<group>"; };
+		66ADFF7F2BB0874800187F09 /* Greeting.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Greeting.class; sourceTree = "<group>"; };
+		66ADFF872BB0874800187F09 /* package-aware-r.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "package-aware-r.txt"; sourceTree = "<group>"; };
+		66ADFF922BB0874800187F09 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		66ADFF962BB0874800187F09 /* annotationProcessors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annotationProcessors.json; sourceTree = "<group>"; };
+		66ADFF992BB0874800187F09 /* merger.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = merger.xml; sourceTree = "<group>"; };
+		66ADFF9C2BB0874800187F09 /* compile-file-map.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "compile-file-map.properties"; sourceTree = "<group>"; };
+		66ADFF9F2BB0874800187F09 /* merger.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = merger.xml; sourceTree = "<group>"; };
+		66ADFFA72BB0874800187F09 /* R-def.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "R-def.txt"; sourceTree = "<group>"; };
+		66ADFFAC2BB0874800187F09 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		66ADFFAD2BB0874800187F09 /* output-metadata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "output-metadata.json"; sourceTree = "<group>"; };
+		66ADFFB12BB0874800187F09 /* classes.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = classes.jar; sourceTree = "<group>"; };
+		66ADFFB52BB0874800187F09 /* navigation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = navigation.json; sourceTree = "<group>"; };
+		66ADFFB92BB0874800187F09 /* R.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = R.jar; sourceTree = "<group>"; };
+		66ADFFC12BB0874800187F09 /* R.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = R.txt; sourceTree = "<group>"; };
+		66ADFFC52BB0874800187F09 /* nestedResourcesValidationReport.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = nestedResourcesValidationReport.txt; sourceTree = "<group>"; };
+		66ADFFC92BB0874800187F09 /* manifest-merger-blame-debug-report.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manifest-merger-blame-debug-report.txt"; sourceTree = "<group>"; };
+		66ADFFD32BB0874800187F09 /* shared_debug.kotlin_module */ = {isa = PBXFileReference; lastKnownFileType = file; path = shared_debug.kotlin_module; sourceTree = "<group>"; };
+		66ADFFDA2BB0874800187F09 /* aar-metadata.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "aar-metadata.properties"; sourceTree = "<group>"; };
+		66ADFFE92BB0874800187F09 /* shared_debug.kotlin_module */ = {isa = PBXFileReference; lastKnownFileType = file; path = shared_debug.kotlin_module; sourceTree = "<group>"; };
+		66ADFFED2BB0874800187F09 /* Platform.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Platform.class; sourceTree = "<group>"; };
+		66ADFFEE2BB0874800187F09 /* Platform_androidKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Platform_androidKt.class; sourceTree = "<group>"; };
+		66ADFFEF2BB0874800187F09 /* AndroidPlatform.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AndroidPlatform.class; sourceTree = "<group>"; };
+		66ADFFF02BB0874800187F09 /* Greeting.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Greeting.class; sourceTree = "<group>"; };
+		66ADFFF32BB0874800187F09 /* manifest-merger-debug-report.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manifest-merger-debug-report.txt"; sourceTree = "<group>"; };
+		66ADFFFA2BB0874800187F09 /* Platform.ios.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.ios.kt; sourceTree = "<group>"; };
+		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7555FF78242A565900829871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		058557D7273AAEEB004C7B11 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66AD00022BB0874800187F09 /* androidMain */ = {
+			isa = PBXGroup;
+			children = (
+				66AD00032BB0874800187F09 /* kotlin */,
+			);
+			path = androidMain;
+			sourceTree = "<group>";
+		};
+		66AD00032BB0874800187F09 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				66AD00042BB0874800187F09 /* com */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		66AD00042BB0874800187F09 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				66AD00052BB0874800187F09 /* geekingwithmauri */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		66AD00052BB0874800187F09 /* geekingwithmauri */ = {
+			isa = PBXGroup;
+			children = (
+				66AD00062BB0874800187F09 /* dailypulse */,
+			);
+			path = geekingwithmauri;
+			sourceTree = "<group>";
+		};
+		66AD00062BB0874800187F09 /* dailypulse */ = {
+			isa = PBXGroup;
+			children = (
+				66AD00072BB0874800187F09 /* Platform.android.kt */,
+			);
+			path = dailypulse;
+			sourceTree = "<group>";
+		};
+		66ADFEF12BB0874800187F09 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEF22BB0874800187F09 /* build.gradle.kts */,
+				66ADFEF32BB0874800187F09 /* build */,
+				66ADFFF42BB0874800187F09 /* src */,
+			);
+			name = shared;
+			path = ../shared;
+			sourceTree = "<group>";
+		};
+		66ADFEF32BB0874800187F09 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEF42BB0874800187F09 /* generated */,
+				66ADFEFA2BB0874800187F09 /* .transforms */,
+				66ADFF0A2BB0874800187F09 /* kotlin */,
+				66ADFF732BB0874800187F09 /* intermediates */,
+				66ADFFE52BB0874800187F09 /* tmp */,
+				66ADFFF12BB0874800187F09 /* outputs */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		66ADFEF42BB0874800187F09 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEF52BB0874800187F09 /* res */,
+			);
+			path = generated;
+			sourceTree = "<group>";
+		};
+		66ADFEF52BB0874800187F09 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEF62BB0874800187F09 /* pngs */,
+				66ADFEF82BB0874800187F09 /* resValues */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		66ADFEF62BB0874800187F09 /* pngs */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEF72BB0874800187F09 /* debug */,
+			);
+			path = pngs;
+			sourceTree = "<group>";
+		};
+		66ADFEF72BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFEF82BB0874800187F09 /* resValues */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEF92BB0874800187F09 /* debug */,
+			);
+			path = resValues;
+			sourceTree = "<group>";
+		};
+		66ADFEF92BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFEFA2BB0874800187F09 /* .transforms */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEFB2BB0874800187F09 /* c5939378893740fd45e71296662728f0 */,
+				66ADFEFE2BB0874800187F09 /* f03451b1b6b9526ad4f77a02ffd4bc68 */,
+			);
+			path = .transforms;
+			sourceTree = "<group>";
+		};
+		66ADFEFB2BB0874800187F09 /* c5939378893740fd45e71296662728f0 */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEFC2BB0874800187F09 /* results.bin */,
+				66ADFEFD2BB0874800187F09 /* transformed */,
+			);
+			path = c5939378893740fd45e71296662728f0;
+			sourceTree = "<group>";
+		};
+		66ADFEFD2BB0874800187F09 /* transformed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = transformed;
+			sourceTree = "<group>";
+		};
+		66ADFEFE2BB0874800187F09 /* f03451b1b6b9526ad4f77a02ffd4bc68 */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEFF2BB0874800187F09 /* results.bin */,
+				66ADFF002BB0874800187F09 /* transformed */,
+			);
+			path = f03451b1b6b9526ad4f77a02ffd4bc68;
+			sourceTree = "<group>";
+		};
+		66ADFF002BB0874800187F09 /* transformed */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF012BB0874800187F09 /* bundleLibRuntimeToDirDebug */,
+			);
+			path = transformed;
+			sourceTree = "<group>";
+		};
+		66ADFF012BB0874800187F09 /* bundleLibRuntimeToDirDebug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF022BB0874800187F09 /* desugar_graph.bin */,
+				66ADFF032BB0874800187F09 /* com */,
+			);
+			path = bundleLibRuntimeToDirDebug;
+			sourceTree = "<group>";
+		};
+		66ADFF032BB0874800187F09 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF042BB0874800187F09 /* geekingwithmauri */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		66ADFF042BB0874800187F09 /* geekingwithmauri */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF052BB0874800187F09 /* dailypulse */,
+			);
+			path = geekingwithmauri;
+			sourceTree = "<group>";
+		};
+		66ADFF052BB0874800187F09 /* dailypulse */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF062BB0874800187F09 /* Greeting.dex */,
+				66ADFF072BB0874800187F09 /* Platform.dex */,
+				66ADFF082BB0874800187F09 /* Platform_androidKt.dex */,
+				66ADFF092BB0874800187F09 /* AndroidPlatform.dex */,
+			);
+			path = dailypulse;
+			sourceTree = "<group>";
+		};
+		66ADFF0A2BB0874800187F09 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF0B2BB0874800187F09 /* compileDebugKotlinAndroid */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		66ADFF0B2BB0874800187F09 /* compileDebugKotlinAndroid */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF0C2BB0874800187F09 /* cacheable */,
+				66ADFF6F2BB0874800187F09 /* classpath-snapshot */,
+				66ADFF712BB0874800187F09 /* local-state */,
+			);
+			path = compileDebugKotlinAndroid;
+			sourceTree = "<group>";
+		};
+		66ADFF0C2BB0874800187F09 /* cacheable */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF0D2BB0874800187F09 /* last-build.bin */,
+				66ADFF0E2BB0874800187F09 /* caches-jvm */,
+			);
+			path = cacheable;
+			sourceTree = "<group>";
+		};
+		66ADFF0E2BB0874800187F09 /* caches-jvm */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF0F2BB0874800187F09 /* lookups */,
+				66ADFF262BB0874800187F09 /* jvm */,
+				66ADFF672BB0874800187F09 /* inputs */,
+			);
+			path = "caches-jvm";
+			sourceTree = "<group>";
+		};
+		66ADFF0F2BB0874800187F09 /* lookups */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF102BB0874800187F09 /* file-to-id.tab.values.at */,
+				66ADFF112BB0874800187F09 /* lookups.tab.keystream.len */,
+				66ADFF122BB0874800187F09 /* file-to-id.tab */,
+				66ADFF132BB0874800187F09 /* file-to-id.tab_i */,
+				66ADFF142BB0874800187F09 /* file-to-id.tab.keystream */,
+				66ADFF152BB0874800187F09 /* file-to-id.tab.keystream.len */,
+				66ADFF162BB0874800187F09 /* lookups.tab_i.len */,
+				66ADFF172BB0874800187F09 /* lookups.tab_i */,
+				66ADFF182BB0874800187F09 /* id-to-file.tab.keystream.len */,
+				66ADFF192BB0874800187F09 /* id-to-file.tab.len */,
+				66ADFF1A2BB0874800187F09 /* file-to-id.tab.len */,
+				66ADFF1B2BB0874800187F09 /* counters.tab */,
+				66ADFF1C2BB0874800187F09 /* file-to-id.tab_i.len */,
+				66ADFF1D2BB0874800187F09 /* lookups.tab.keystream */,
+				66ADFF1E2BB0874800187F09 /* lookups.tab.values.at */,
+				66ADFF1F2BB0874800187F09 /* id-to-file.tab */,
+				66ADFF202BB0874800187F09 /* lookups.tab */,
+				66ADFF212BB0874800187F09 /* id-to-file.tab.keystream */,
+				66ADFF222BB0874800187F09 /* id-to-file.tab_i */,
+				66ADFF232BB0874800187F09 /* id-to-file.tab_i.len */,
+				66ADFF242BB0874800187F09 /* lookups.tab.len */,
+				66ADFF252BB0874800187F09 /* id-to-file.tab.values.at */,
+			);
+			path = lookups;
+			sourceTree = "<group>";
+		};
+		66ADFF262BB0874800187F09 /* jvm */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF272BB0874800187F09 /* kotlin */,
+			);
+			path = jvm;
+			sourceTree = "<group>";
+		};
+		66ADFF272BB0874800187F09 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF282BB0874800187F09 /* complementary-files.tab.keystream */,
+				66ADFF292BB0874800187F09 /* complementary-files.tab.keystream.len */,
+				66ADFF2A2BB0874800187F09 /* complementary-files.tab_i.len */,
+				66ADFF2B2BB0874800187F09 /* subtypes.tab_i */,
+				66ADFF2C2BB0874800187F09 /* source-to-classes.tab.len */,
+				66ADFF2D2BB0874800187F09 /* class-attributes.tab */,
+				66ADFF2E2BB0874800187F09 /* class-fq-name-to-source.tab_i.len */,
+				66ADFF2F2BB0874800187F09 /* class-fq-name-to-source.tab.len */,
+				66ADFF302BB0874800187F09 /* subtypes.tab_i.len */,
+				66ADFF312BB0874800187F09 /* complementary-files.tab */,
+				66ADFF322BB0874800187F09 /* complementary-files.tab_i */,
+				66ADFF332BB0874800187F09 /* supertypes.tab.len */,
+				66ADFF342BB0874800187F09 /* proto.tab.keystream.len */,
+				66ADFF352BB0874800187F09 /* complementary-files.tab.values.at */,
+				66ADFF362BB0874800187F09 /* subtypes.tab.keystream.len */,
+				66ADFF372BB0874800187F09 /* package-parts.tab */,
+				66ADFF382BB0874800187F09 /* source-to-classes.tab.keystream.len */,
+				66ADFF392BB0874800187F09 /* internal-name-to-source.tab.len */,
+				66ADFF3A2BB0874800187F09 /* source-to-classes.tab */,
+				66ADFF3B2BB0874800187F09 /* internal-name-to-source.tab.keystream */,
+				66ADFF3C2BB0874800187F09 /* source-to-classes.tab.keystream */,
+				66ADFF3D2BB0874800187F09 /* supertypes.tab_i */,
+				66ADFF3E2BB0874800187F09 /* class-fq-name-to-source.tab.keystream.len */,
+				66ADFF3F2BB0874800187F09 /* source-to-classes.tab_i.len */,
+				66ADFF402BB0874800187F09 /* internal-name-to-source.tab_i */,
+				66ADFF412BB0874800187F09 /* class-fq-name-to-source.tab.keystream */,
+				66ADFF422BB0874800187F09 /* internal-name-to-source.tab.keystream.len */,
+				66ADFF432BB0874800187F09 /* package-parts.tab_i */,
+				66ADFF442BB0874800187F09 /* internal-name-to-source.tab */,
+				66ADFF452BB0874800187F09 /* internal-name-to-source.tab.values.at */,
+				66ADFF462BB0874800187F09 /* supertypes.tab */,
+				66ADFF472BB0874800187F09 /* source-to-classes.tab.values.at */,
+				66ADFF482BB0874800187F09 /* package-parts.tab_i.len */,
+				66ADFF492BB0874800187F09 /* class-fq-name-to-source.tab.values.at */,
+				66ADFF4A2BB0874800187F09 /* source-to-classes.tab_i */,
+				66ADFF4B2BB0874800187F09 /* subtypes.tab.len */,
+				66ADFF4C2BB0874800187F09 /* subtypes.tab.values.at */,
+				66ADFF4D2BB0874800187F09 /* internal-name-to-source.tab_i.len */,
+				66ADFF4E2BB0874800187F09 /* subtypes.tab */,
+				66ADFF4F2BB0874800187F09 /* class-attributes.tab_i.len */,
+				66ADFF502BB0874800187F09 /* package-parts.tab.values.at */,
+				66ADFF512BB0874800187F09 /* class-attributes.tab.len */,
+				66ADFF522BB0874800187F09 /* class-attributes.tab_i */,
+				66ADFF532BB0874800187F09 /* subtypes.tab.keystream */,
+				66ADFF542BB0874800187F09 /* proto.tab */,
+				66ADFF552BB0874800187F09 /* proto.tab.len */,
+				66ADFF562BB0874800187F09 /* package-parts.tab.keystream */,
+				66ADFF572BB0874800187F09 /* class-fq-name-to-source.tab */,
+				66ADFF582BB0874800187F09 /* class-attributes.tab.keystream.len */,
+				66ADFF592BB0874800187F09 /* package-parts.tab.keystream.len */,
+				66ADFF5A2BB0874800187F09 /* proto.tab.keystream */,
+				66ADFF5B2BB0874800187F09 /* supertypes.tab_i.len */,
+				66ADFF5C2BB0874800187F09 /* class-attributes.tab.values.at */,
+				66ADFF5D2BB0874800187F09 /* supertypes.tab.values.at */,
+				66ADFF5E2BB0874800187F09 /* complementary-files.tab.len */,
+				66ADFF5F2BB0874800187F09 /* supertypes.tab.keystream.len */,
+				66ADFF602BB0874800187F09 /* class-fq-name-to-source.tab_i */,
+				66ADFF612BB0874800187F09 /* proto.tab_i.len */,
+				66ADFF622BB0874800187F09 /* proto.tab.values.at */,
+				66ADFF632BB0874800187F09 /* class-attributes.tab.keystream */,
+				66ADFF642BB0874800187F09 /* proto.tab_i */,
+				66ADFF652BB0874800187F09 /* package-parts.tab.len */,
+				66ADFF662BB0874800187F09 /* supertypes.tab.keystream */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		66ADFF672BB0874800187F09 /* inputs */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF682BB0874800187F09 /* source-to-output.tab_i */,
+				66ADFF692BB0874800187F09 /* source-to-output.tab.keystream.len */,
+				66ADFF6A2BB0874800187F09 /* source-to-output.tab */,
+				66ADFF6B2BB0874800187F09 /* source-to-output.tab_i.len */,
+				66ADFF6C2BB0874800187F09 /* source-to-output.tab.keystream */,
+				66ADFF6D2BB0874800187F09 /* source-to-output.tab.len */,
+				66ADFF6E2BB0874800187F09 /* source-to-output.tab.values.at */,
+			);
+			path = inputs;
+			sourceTree = "<group>";
+		};
+		66ADFF6F2BB0874800187F09 /* classpath-snapshot */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF702BB0874800187F09 /* shrunk-classpath-snapshot.bin */,
+			);
+			path = "classpath-snapshot";
+			sourceTree = "<group>";
+		};
+		66ADFF712BB0874800187F09 /* local-state */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF722BB0874800187F09 /* build-history.bin */,
+			);
+			path = "local-state";
+			sourceTree = "<group>";
+		};
+		66ADFF732BB0874800187F09 /* intermediates */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF742BB0874800187F09 /* runtime_library_classes_dir */,
+				66ADFF802BB0874800187F09 /* library_jni */,
+				66ADFF842BB0874800187F09 /* symbol_list_with_package_name */,
+				66ADFF882BB0874800187F09 /* packaged_res */,
+				66ADFF8B2BB0874800187F09 /* library_assets */,
+				66ADFF8F2BB0874800187F09 /* merged_manifest */,
+				66ADFF932BB0874800187F09 /* annotation_processor_list */,
+				66ADFF972BB0874800187F09 /* incremental */,
+				66ADFFA02BB0874800187F09 /* compiled_local_resources */,
+				66ADFFA42BB0874800187F09 /* local_only_symbol_list */,
+				66ADFFA82BB0874800187F09 /* aapt_friendly_merged_manifests */,
+				66ADFFAE2BB0874800187F09 /* compile_library_classes_jar */,
+				66ADFFB22BB0874800187F09 /* navigation_json */,
+				66ADFFB62BB0874800187F09 /* compile_r_class_jar */,
+				66ADFFBA2BB0874800187F09 /* data_binding_layout_info_type_package */,
+				66ADFFBE2BB0874800187F09 /* compile_symbol_list */,
+				66ADFFC22BB0874800187F09 /* nested_resources_validation_report */,
+				66ADFFC62BB0874800187F09 /* manifest_merge_blame_file */,
+				66ADFFCA2BB0874800187F09 /* merged_jni_libs */,
+				66ADFFCE2BB0874800187F09 /* java_res */,
+				66ADFFD72BB0874800187F09 /* aar_metadata */,
+				66ADFFDB2BB0874800187F09 /* merged_shaders */,
+				66ADFFDF2BB0874800187F09 /* tmp */,
+				66ADFFE22BB0874800187F09 /* public_res */,
+			);
+			path = intermediates;
+			sourceTree = "<group>";
+		};
+		66ADFF742BB0874800187F09 /* runtime_library_classes_dir */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF752BB0874800187F09 /* debug */,
+			);
+			path = runtime_library_classes_dir;
+			sourceTree = "<group>";
+		};
+		66ADFF752BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF762BB0874800187F09 /* bundleLibRuntimeToDirDebug */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFF762BB0874800187F09 /* bundleLibRuntimeToDirDebug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF772BB0874800187F09 /* META-INF */,
+				66ADFF792BB0874800187F09 /* com */,
+			);
+			path = bundleLibRuntimeToDirDebug;
+			sourceTree = "<group>";
+		};
+		66ADFF772BB0874800187F09 /* META-INF */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF782BB0874800187F09 /* shared_debug.kotlin_module */,
+			);
+			path = "META-INF";
+			sourceTree = "<group>";
+		};
+		66ADFF792BB0874800187F09 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF7A2BB0874800187F09 /* geekingwithmauri */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		66ADFF7A2BB0874800187F09 /* geekingwithmauri */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF7B2BB0874800187F09 /* dailypulse */,
+			);
+			path = geekingwithmauri;
+			sourceTree = "<group>";
+		};
+		66ADFF7B2BB0874800187F09 /* dailypulse */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF7C2BB0874800187F09 /* Platform.class */,
+				66ADFF7D2BB0874800187F09 /* Platform_androidKt.class */,
+				66ADFF7E2BB0874800187F09 /* AndroidPlatform.class */,
+				66ADFF7F2BB0874800187F09 /* Greeting.class */,
+			);
+			path = dailypulse;
+			sourceTree = "<group>";
+		};
+		66ADFF802BB0874800187F09 /* library_jni */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF812BB0874800187F09 /* debug */,
+			);
+			path = library_jni;
+			sourceTree = "<group>";
+		};
+		66ADFF812BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF822BB0874800187F09 /* copyDebugJniLibsProjectOnly */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFF822BB0874800187F09 /* copyDebugJniLibsProjectOnly */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF832BB0874800187F09 /* jni */,
+			);
+			path = copyDebugJniLibsProjectOnly;
+			sourceTree = "<group>";
+		};
+		66ADFF832BB0874800187F09 /* jni */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = jni;
+			sourceTree = "<group>";
+		};
+		66ADFF842BB0874800187F09 /* symbol_list_with_package_name */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF852BB0874800187F09 /* debug */,
+			);
+			path = symbol_list_with_package_name;
+			sourceTree = "<group>";
+		};
+		66ADFF852BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF862BB0874800187F09 /* generateDebugRFile */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFF862BB0874800187F09 /* generateDebugRFile */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF872BB0874800187F09 /* package-aware-r.txt */,
+			);
+			path = generateDebugRFile;
+			sourceTree = "<group>";
+		};
+		66ADFF882BB0874800187F09 /* packaged_res */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF892BB0874800187F09 /* debug */,
+			);
+			path = packaged_res;
+			sourceTree = "<group>";
+		};
+		66ADFF892BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF8A2BB0874800187F09 /* packageDebugResources */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFF8A2BB0874800187F09 /* packageDebugResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = packageDebugResources;
+			sourceTree = "<group>";
+		};
+		66ADFF8B2BB0874800187F09 /* library_assets */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF8C2BB0874800187F09 /* debug */,
+			);
+			path = library_assets;
+			sourceTree = "<group>";
+		};
+		66ADFF8C2BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF8D2BB0874800187F09 /* packageDebugAssets */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFF8D2BB0874800187F09 /* packageDebugAssets */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF8E2BB0874800187F09 /* out */,
+			);
+			path = packageDebugAssets;
+			sourceTree = "<group>";
+		};
+		66ADFF8E2BB0874800187F09 /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		66ADFF8F2BB0874800187F09 /* merged_manifest */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF902BB0874800187F09 /* debug */,
+			);
+			path = merged_manifest;
+			sourceTree = "<group>";
+		};
+		66ADFF902BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF912BB0874800187F09 /* processDebugManifest */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFF912BB0874800187F09 /* processDebugManifest */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF922BB0874800187F09 /* AndroidManifest.xml */,
+			);
+			path = processDebugManifest;
+			sourceTree = "<group>";
+		};
+		66ADFF932BB0874800187F09 /* annotation_processor_list */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF942BB0874800187F09 /* debug */,
+			);
+			path = annotation_processor_list;
+			sourceTree = "<group>";
+		};
+		66ADFF942BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF952BB0874800187F09 /* javaPreCompileDebug */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFF952BB0874800187F09 /* javaPreCompileDebug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF962BB0874800187F09 /* annotationProcessors.json */,
+			);
+			path = javaPreCompileDebug;
+			sourceTree = "<group>";
+		};
+		66ADFF972BB0874800187F09 /* incremental */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF982BB0874800187F09 /* mergeDebugShaders */,
+				66ADFF9A2BB0874800187F09 /* debug */,
+			);
+			path = incremental;
+			sourceTree = "<group>";
+		};
+		66ADFF982BB0874800187F09 /* mergeDebugShaders */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF992BB0874800187F09 /* merger.xml */,
+			);
+			path = mergeDebugShaders;
+			sourceTree = "<group>";
+		};
+		66ADFF9A2BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF9B2BB0874800187F09 /* packageDebugResources */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFF9B2BB0874800187F09 /* packageDebugResources */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFF9C2BB0874800187F09 /* compile-file-map.properties */,
+				66ADFF9D2BB0874800187F09 /* merged.dir */,
+				66ADFF9E2BB0874800187F09 /* stripped.dir */,
+				66ADFF9F2BB0874800187F09 /* merger.xml */,
+			);
+			path = packageDebugResources;
+			sourceTree = "<group>";
+		};
+		66ADFF9D2BB0874800187F09 /* merged.dir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = merged.dir;
+			sourceTree = "<group>";
+		};
+		66ADFF9E2BB0874800187F09 /* stripped.dir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stripped.dir;
+			sourceTree = "<group>";
+		};
+		66ADFFA02BB0874800187F09 /* compiled_local_resources */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFA12BB0874800187F09 /* debug */,
+			);
+			path = compiled_local_resources;
+			sourceTree = "<group>";
+		};
+		66ADFFA12BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFA22BB0874800187F09 /* compileDebugLibraryResources */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFA22BB0874800187F09 /* compileDebugLibraryResources */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFA32BB0874800187F09 /* out */,
+			);
+			path = compileDebugLibraryResources;
+			sourceTree = "<group>";
+		};
+		66ADFFA32BB0874800187F09 /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		66ADFFA42BB0874800187F09 /* local_only_symbol_list */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFA52BB0874800187F09 /* debug */,
+			);
+			path = local_only_symbol_list;
+			sourceTree = "<group>";
+		};
+		66ADFFA52BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFA62BB0874800187F09 /* parseDebugLocalResources */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFA62BB0874800187F09 /* parseDebugLocalResources */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFA72BB0874800187F09 /* R-def.txt */,
+			);
+			path = parseDebugLocalResources;
+			sourceTree = "<group>";
+		};
+		66ADFFA82BB0874800187F09 /* aapt_friendly_merged_manifests */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFA92BB0874800187F09 /* debug */,
+			);
+			path = aapt_friendly_merged_manifests;
+			sourceTree = "<group>";
+		};
+		66ADFFA92BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFAA2BB0874800187F09 /* processDebugManifest */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFAA2BB0874800187F09 /* processDebugManifest */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFAB2BB0874800187F09 /* aapt */,
+			);
+			path = processDebugManifest;
+			sourceTree = "<group>";
+		};
+		66ADFFAB2BB0874800187F09 /* aapt */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFAC2BB0874800187F09 /* AndroidManifest.xml */,
+				66ADFFAD2BB0874800187F09 /* output-metadata.json */,
+			);
+			path = aapt;
+			sourceTree = "<group>";
+		};
+		66ADFFAE2BB0874800187F09 /* compile_library_classes_jar */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFAF2BB0874800187F09 /* debug */,
+			);
+			path = compile_library_classes_jar;
+			sourceTree = "<group>";
+		};
+		66ADFFAF2BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFB02BB0874800187F09 /* bundleLibCompileToJarDebug */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFB02BB0874800187F09 /* bundleLibCompileToJarDebug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFB12BB0874800187F09 /* classes.jar */,
+			);
+			path = bundleLibCompileToJarDebug;
+			sourceTree = "<group>";
+		};
+		66ADFFB22BB0874800187F09 /* navigation_json */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFB32BB0874800187F09 /* debug */,
+			);
+			path = navigation_json;
+			sourceTree = "<group>";
+		};
+		66ADFFB32BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFB42BB0874800187F09 /* extractDeepLinksDebug */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFB42BB0874800187F09 /* extractDeepLinksDebug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFB52BB0874800187F09 /* navigation.json */,
+			);
+			path = extractDeepLinksDebug;
+			sourceTree = "<group>";
+		};
+		66ADFFB62BB0874800187F09 /* compile_r_class_jar */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFB72BB0874800187F09 /* debug */,
+			);
+			path = compile_r_class_jar;
+			sourceTree = "<group>";
+		};
+		66ADFFB72BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFB82BB0874800187F09 /* generateDebugRFile */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFB82BB0874800187F09 /* generateDebugRFile */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFB92BB0874800187F09 /* R.jar */,
+			);
+			path = generateDebugRFile;
+			sourceTree = "<group>";
+		};
+		66ADFFBA2BB0874800187F09 /* data_binding_layout_info_type_package */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFBB2BB0874800187F09 /* debug */,
+			);
+			path = data_binding_layout_info_type_package;
+			sourceTree = "<group>";
+		};
+		66ADFFBB2BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFBC2BB0874800187F09 /* packageDebugResources */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFBC2BB0874800187F09 /* packageDebugResources */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFBD2BB0874800187F09 /* out */,
+			);
+			path = packageDebugResources;
+			sourceTree = "<group>";
+		};
+		66ADFFBD2BB0874800187F09 /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		66ADFFBE2BB0874800187F09 /* compile_symbol_list */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFBF2BB0874800187F09 /* debug */,
+			);
+			path = compile_symbol_list;
+			sourceTree = "<group>";
+		};
+		66ADFFBF2BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFC02BB0874800187F09 /* generateDebugRFile */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFC02BB0874800187F09 /* generateDebugRFile */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFC12BB0874800187F09 /* R.txt */,
+			);
+			path = generateDebugRFile;
+			sourceTree = "<group>";
+		};
+		66ADFFC22BB0874800187F09 /* nested_resources_validation_report */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFC32BB0874800187F09 /* debug */,
+			);
+			path = nested_resources_validation_report;
+			sourceTree = "<group>";
+		};
+		66ADFFC32BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFC42BB0874800187F09 /* generateDebugResources */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFC42BB0874800187F09 /* generateDebugResources */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFC52BB0874800187F09 /* nestedResourcesValidationReport.txt */,
+			);
+			path = generateDebugResources;
+			sourceTree = "<group>";
+		};
+		66ADFFC62BB0874800187F09 /* manifest_merge_blame_file */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFC72BB0874800187F09 /* debug */,
+			);
+			path = manifest_merge_blame_file;
+			sourceTree = "<group>";
+		};
+		66ADFFC72BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFC82BB0874800187F09 /* processDebugManifest */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFC82BB0874800187F09 /* processDebugManifest */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFC92BB0874800187F09 /* manifest-merger-blame-debug-report.txt */,
+			);
+			path = processDebugManifest;
+			sourceTree = "<group>";
+		};
+		66ADFFCA2BB0874800187F09 /* merged_jni_libs */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFCB2BB0874800187F09 /* debug */,
+			);
+			path = merged_jni_libs;
+			sourceTree = "<group>";
+		};
+		66ADFFCB2BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFCC2BB0874800187F09 /* mergeDebugJniLibFolders */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFCC2BB0874800187F09 /* mergeDebugJniLibFolders */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFCD2BB0874800187F09 /* out */,
+			);
+			path = mergeDebugJniLibFolders;
+			sourceTree = "<group>";
+		};
+		66ADFFCD2BB0874800187F09 /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		66ADFFCE2BB0874800187F09 /* java_res */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFCF2BB0874800187F09 /* debug */,
+			);
+			path = java_res;
+			sourceTree = "<group>";
+		};
+		66ADFFCF2BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFD02BB0874800187F09 /* processDebugJavaRes */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFD02BB0874800187F09 /* processDebugJavaRes */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFD12BB0874800187F09 /* out */,
+			);
+			path = processDebugJavaRes;
+			sourceTree = "<group>";
+		};
+		66ADFFD12BB0874800187F09 /* out */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFD22BB0874800187F09 /* META-INF */,
+				66ADFFD42BB0874800187F09 /* com */,
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		66ADFFD22BB0874800187F09 /* META-INF */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFD32BB0874800187F09 /* shared_debug.kotlin_module */,
+			);
+			path = "META-INF";
+			sourceTree = "<group>";
+		};
+		66ADFFD42BB0874800187F09 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFD52BB0874800187F09 /* geekingwithmauri */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		66ADFFD52BB0874800187F09 /* geekingwithmauri */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFD62BB0874800187F09 /* dailypulse */,
+			);
+			path = geekingwithmauri;
+			sourceTree = "<group>";
+		};
+		66ADFFD62BB0874800187F09 /* dailypulse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dailypulse;
+			sourceTree = "<group>";
+		};
+		66ADFFD72BB0874800187F09 /* aar_metadata */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFD82BB0874800187F09 /* debug */,
+			);
+			path = aar_metadata;
+			sourceTree = "<group>";
+		};
+		66ADFFD82BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFD92BB0874800187F09 /* writeDebugAarMetadata */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFD92BB0874800187F09 /* writeDebugAarMetadata */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFDA2BB0874800187F09 /* aar-metadata.properties */,
+			);
+			path = writeDebugAarMetadata;
+			sourceTree = "<group>";
+		};
+		66ADFFDB2BB0874800187F09 /* merged_shaders */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFDC2BB0874800187F09 /* debug */,
+			);
+			path = merged_shaders;
+			sourceTree = "<group>";
+		};
+		66ADFFDC2BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFDD2BB0874800187F09 /* mergeDebugShaders */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFDD2BB0874800187F09 /* mergeDebugShaders */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFDE2BB0874800187F09 /* out */,
+			);
+			path = mergeDebugShaders;
+			sourceTree = "<group>";
+		};
+		66ADFFDE2BB0874800187F09 /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		66ADFFDF2BB0874800187F09 /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFE02BB0874800187F09 /* ProcessLibraryManifest */,
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+		66ADFFE02BB0874800187F09 /* ProcessLibraryManifest */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFE12BB0874800187F09 /* debug */,
+			);
+			path = ProcessLibraryManifest;
+			sourceTree = "<group>";
+		};
+		66ADFFE12BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFE22BB0874800187F09 /* public_res */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFE32BB0874800187F09 /* debug */,
+			);
+			path = public_res;
+			sourceTree = "<group>";
+		};
+		66ADFFE32BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFE42BB0874800187F09 /* packageDebugResources */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFE42BB0874800187F09 /* packageDebugResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = packageDebugResources;
+			sourceTree = "<group>";
+		};
+		66ADFFE52BB0874800187F09 /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFE62BB0874800187F09 /* kotlin-classes */,
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+		66ADFFE62BB0874800187F09 /* kotlin-classes */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFE72BB0874800187F09 /* debug */,
+			);
+			path = "kotlin-classes";
+			sourceTree = "<group>";
+		};
+		66ADFFE72BB0874800187F09 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFE82BB0874800187F09 /* META-INF */,
+				66ADFFEA2BB0874800187F09 /* com */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		66ADFFE82BB0874800187F09 /* META-INF */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFE92BB0874800187F09 /* shared_debug.kotlin_module */,
+			);
+			path = "META-INF";
+			sourceTree = "<group>";
+		};
+		66ADFFEA2BB0874800187F09 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFEB2BB0874800187F09 /* geekingwithmauri */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		66ADFFEB2BB0874800187F09 /* geekingwithmauri */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFEC2BB0874800187F09 /* dailypulse */,
+			);
+			path = geekingwithmauri;
+			sourceTree = "<group>";
+		};
+		66ADFFEC2BB0874800187F09 /* dailypulse */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFED2BB0874800187F09 /* Platform.class */,
+				66ADFFEE2BB0874800187F09 /* Platform_androidKt.class */,
+				66ADFFEF2BB0874800187F09 /* AndroidPlatform.class */,
+				66ADFFF02BB0874800187F09 /* Greeting.class */,
+			);
+			path = dailypulse;
+			sourceTree = "<group>";
+		};
+		66ADFFF12BB0874800187F09 /* outputs */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFF22BB0874800187F09 /* logs */,
+			);
+			path = outputs;
+			sourceTree = "<group>";
+		};
+		66ADFFF22BB0874800187F09 /* logs */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFF32BB0874800187F09 /* manifest-merger-debug-report.txt */,
+			);
+			path = logs;
+			sourceTree = "<group>";
+		};
+		66ADFFF42BB0874800187F09 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFF52BB0874800187F09 /* iosMain */,
+				66ADFFFB2BB0874800187F09 /* commonMain */,
+				66AD00022BB0874800187F09 /* androidMain */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		66ADFFF52BB0874800187F09 /* iosMain */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFF62BB0874800187F09 /* kotlin */,
+			);
+			path = iosMain;
+			sourceTree = "<group>";
+		};
+		66ADFFF62BB0874800187F09 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFF72BB0874800187F09 /* com */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		66ADFFF72BB0874800187F09 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFF82BB0874800187F09 /* geekingwithmauri */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		66ADFFF82BB0874800187F09 /* geekingwithmauri */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFF92BB0874800187F09 /* dailypulse */,
+			);
+			path = geekingwithmauri;
+			sourceTree = "<group>";
+		};
+		66ADFFF92BB0874800187F09 /* dailypulse */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFFA2BB0874800187F09 /* Platform.ios.kt */,
+			);
+			path = dailypulse;
+			sourceTree = "<group>";
+		};
+		66ADFFFB2BB0874800187F09 /* commonMain */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFFC2BB0874800187F09 /* kotlin */,
+			);
+			path = commonMain;
+			sourceTree = "<group>";
+		};
+		66ADFFFC2BB0874800187F09 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFFD2BB0874800187F09 /* com */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		66ADFFFD2BB0874800187F09 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFFE2BB0874800187F09 /* geekingwithmauri */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		66ADFFFE2BB0874800187F09 /* geekingwithmauri */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFFFF2BB0874800187F09 /* dailypulse */,
+			);
+			path = geekingwithmauri;
+			sourceTree = "<group>";
+		};
+		66ADFFFF2BB0874800187F09 /* dailypulse */ = {
+			isa = PBXGroup;
+			children = (
+				66AD00002BB0874800187F09 /* Platform.kt */,
+				66AD00012BB0874800187F09 /* Greeting.kt */,
+			);
+			path = dailypulse;
+			sourceTree = "<group>";
+		};
+		7555FF72242A565900829871 = {
+			isa = PBXGroup;
+			children = (
+				7555FF7D242A565900829871 /* iosApp */,
+				7555FF7C242A565900829871 /* Products */,
+				7555FFB0242A642200829871 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7555FF7C242A565900829871 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7555FF7B242A565900829871 /* iosApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7555FF7D242A565900829871 /* iosApp */ = {
+			isa = PBXGroup;
+			children = (
+				058557BA273AAA24004C7B11 /* Assets.xcassets */,
+				7555FF82242A565900829871 /* ContentView.swift */,
+				7555FF8C242A565B00829871 /* Info.plist */,
+				2152FB032600AC8F00CF470E /* iOSApp.swift */,
+				058557D7273AAEEB004C7B11 /* Preview Content */,
+			);
+			path = iosApp;
+			sourceTree = "<group>";
+		};
+		7555FFB0242A642200829871 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66ADFEF12BB0874800187F09 /* shared */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7555FF7A242A565900829871 /* iosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "iosApp" */;
+			buildPhases = (
+				7555FFB5242A651A00829871 /* ShellScript */,
+				7555FF77242A565900829871 /* Sources */,
+				7555FF78242A565900829871 /* Frameworks */,
+				7555FF79242A565900829871 /* Resources */,
+				7555FFB4242A642300829871 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iosApp;
+			productName = iosApp;
+			productReference = 7555FF7B242A565900829871 /* iosApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7555FF73242A565900829871 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = orgName;
+				TargetAttributes = {
+					7555FF7A242A565900829871 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7555FF76242A565900829871 /* Build configuration list for PBXProject "iosApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7555FF72242A565900829871;
+			productRefGroup = 7555FF7C242A565900829871 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7555FF7A242A565900829871 /* iosApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7555FF79242A565900829871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
+				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7555FFB5242A651A00829871 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7555FF77242A565900829871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7555FFA3242A565B00829871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7555FFA4242A565B00829871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7555FFA6242A565B00829871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
+				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					shared,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7555FFA7242A565B00829871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
+				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					shared,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7555FF76242A565900829871 /* Build configuration list for PBXProject "iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555FFA3242A565B00829871 /* Debug */,
+				7555FFA4242A565B00829871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7555FFA6242A565B00829871 /* Debug */,
+				7555FFA7242A565B00829871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7555FF73242A565900829871 /* Project object */;
+}
