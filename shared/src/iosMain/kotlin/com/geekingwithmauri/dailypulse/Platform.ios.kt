@@ -1,5 +1,6 @@
 package com.geekingwithmauri.dailypulse
 
+import platform.Foundation.NSLog
 import platform.UIKit.UIDevice
 import platform.UIKit.UIScreen
 
