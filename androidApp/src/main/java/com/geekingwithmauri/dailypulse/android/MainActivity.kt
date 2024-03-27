@@ -10,7 +10,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.geekingwithmauri.dailypulse.Articles.ArticleViewModel
-import com.geekingwithmauri.dailypulse.Platform
 import com.geekingwithmauri.dailypulse.android.screens.AboutScreen
 import com.geekingwithmauri.dailypulse.android.screens.ArticleScreen
 
