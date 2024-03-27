@@ -3,6 +3,7 @@ package com.geekingwithmauri.dailypulse.android.screens
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
@@ -19,6 +20,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import com.geekingwithmauri.dailypulse.Articles.Article
 import com.geekingwithmauri.dailypulse.Articles.ArticleViewModel
 import androidx.compose.ui.text.TextStyle
@@ -80,7 +82,7 @@ fun ArticleItemView(article: Article) {
         Spacer(modifier = Modifier.padding(4.dp))
         Text(
             text = article.date,
-            style = TextStyle(fontWeight = FontWeight.Bold, fontSize = 22.sp),
+            style = TextStyle(color = Color.Gray),
             modifier = Modifier.align(Alignment.End)
         )
         Spacer(modifier = Modifier.padding(4.dp))
@@ -90,7 +92,7 @@ fun ArticleItemView(article: Article) {
 @Composable
 fun Loader() {
     Box(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         CircularProgressIndicator(
@@ -104,7 +106,7 @@ fun Loader() {
 @Composable
 fun ErrorMessage(message: String) {
     Box(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Text(
