@@ -29,7 +29,7 @@ kotlin {
         }
 
         androidMain.dependencies {
-            implementation(libs.androidx.lifecycle.viewmodel.android.ktx)
+
         }
 
         iosMain.dependencies {
