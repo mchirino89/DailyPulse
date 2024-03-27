@@ -24,6 +24,7 @@ import com.geekingwithmauri.dailypulse.Articles.ArticleViewModel
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
+import coil.compose.AsyncImage
 
 @Composable
 fun ArticleScreen(articlesViewModel: ArticleViewModel) {
