@@ -32,19 +32,19 @@ class ArticleViewModel: BaseViewModel() {
             title = "Title 1",
             description = "Description 1",
             date = "2021-09-01",
-            imageUrl = "https://picsum.photos/200/300"
+            imageUrl = "https://picsum.photos/300/200"
         ),
         Article(
             title = "Title 2",
             description = "Description 2",
             date = "2021-09-02",
-            imageUrl = "https://picsum.photos/200/300"
+            imageUrl = "https://picsum.photos/300/200"
         ),
         Article(
             title = "Title 3",
             description = "Description 3",
             date = "2021-09-03",
-            imageUrl = "https://picsum.photos/200/300"
+            imageUrl = "https://picsum.photos/300/200"
         )
     )
 }

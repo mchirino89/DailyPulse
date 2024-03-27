@@ -1,4 +1,4 @@
-package com.geekingwithmauri.dailypulse.android
+package com.geekingwithmauri.dailypulse.android.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
