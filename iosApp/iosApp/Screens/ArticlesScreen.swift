@@ -54,7 +54,8 @@ struct ArticlesScreen: View {
                     }
                 }
             }
-        }.onAppear {
+        }.padding(.horizontal, 16)
+        .onAppear {
             self.viewModel.startObserving()
         }
     }
