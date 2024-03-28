@@ -37,7 +37,6 @@
 		662E41C92BB1C1F900779F65 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
 		662E41CC2BB4AE4300779F65 /* ArticlesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesScreen.swift; sourceTree = "<group>"; };
 		66AD00002BB0874800187F09 /* Platform.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.kt; sourceTree = "<group>"; };
-		66AD00012BB0874800187F09 /* Greeting.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Greeting.kt; sourceTree = "<group>"; };
 		66AD00072BB0874800187F09 /* Platform.android.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platform.android.kt; sourceTree = "<group>"; };
 		66ADFEF22BB0874800187F09 /* build.gradle.kts */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle.kts; sourceTree = "<group>"; };
 		66ADFEFC2BB0874800187F09 /* results.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = results.bin; sourceTree = "<group>"; };
@@ -1487,7 +1486,6 @@
 			isa = PBXGroup;
 			children = (
 				66AD00002BB0874800187F09 /* Platform.kt */,
-				66AD00012BB0874800187F09 /* Greeting.kt */,
 			);
 			path = dailypulse;
 			sourceTree = "<group>";

@@ -17,7 +17,7 @@ extension ArticlesScreen {
 
         init() {
             articlesViewModel = ArticleViewModel()
-            articlesState = articlesViewModel.articleState.value
+            articlesState = articlesViewModel.articleState.value as! ArticleState
         }
 
         func startObserving() {
