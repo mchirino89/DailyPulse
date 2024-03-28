@@ -12,18 +12,18 @@ import shared
 extension ArticlesScreen {
     @MainActor
     final class ArticlesViewModelWrapper: ObservableObject {
-        let articlesViewModel: ArticlesViewModel
-        @Published var articlesState = ArticlesState
+        let articlesViewModel: ArticleViewModel
+        @Published var articlesState: ArticleState
 
         init() {
-            self.articlesViewModel = ArticlesViewModel()
-            self.articlesState = articlesViewModel.articlesState.value
+            articlesViewModel = ArticleViewModel()
+            articlesState = articlesViewModel.articleState.value
         }
 
         func startObserving() {
             Task {
-                for await newState in articlesViewModel.articlesState {
-                    self.articlesState = newState
+                for await articlesS in articlesViewModel.articleState {
+                    self.articlesState = articlesS
                 }
             }
         }
@@ -31,7 +31,7 @@ extension ArticlesScreen {
 }
 
 struct ArticlesScreen: View {
-    @ObservableObject private(set) var viewModel: ArticlesViewModelWrapper
+    @ObservedObject private(set) var viewModel: ArticlesViewModelWrapper
 
     var body: some View {
         VStack {
@@ -45,11 +45,11 @@ struct ArticlesScreen: View {
                 ErrorMessage(message: error)
             }
 
-            if !viewModel.articlesState.isEmpty {
+            if !viewModel.articlesState.articles.isEmpty {
                 ScrollView {
                     LazyVStack(spacing: 10) {
-                        ForEach(viewModel.articlesState.articles, id: \.self) { articles in
-                            ArticlesItemView(articles: articles)
+                        ForEach(viewModel.articlesState.articles, id: \.self) { article in
+                            ArticlesItemView(article: article)
                         }
                     }
                 }
@@ -112,8 +112,4 @@ struct ArticlesItemView: View {
                 .foregroundColor(.gray)
         }
     }
-}
-
-#Preview {
-    ArticlesScreen()
 }
