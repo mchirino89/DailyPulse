@@ -98,7 +98,8 @@ struct ArticlesItemView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 } else if phase.error != nil {
-                    Text("Image Load Error")
+                    Text("Image Load Error: ")
+                    Text(phase.error?.localizedDescription ?? "")
                 } else {
                     ProgressView()
                 }
