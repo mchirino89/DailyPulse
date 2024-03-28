@@ -6,12 +6,12 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-class ArticleViewModel: BaseViewModel() {
-    private val _articleState: MutableStateFlow<ArticleState> = MutableStateFlow(
-        ArticleState(loading = true)
+class ArticlesViewModel: BaseViewModel() {
+    private val _articlesState: MutableStateFlow<ArticlesState> = MutableStateFlow(
+        ArticlesState(loading = true)
     )
 
-    val articleState: StateFlow<ArticleState> get() = _articleState
+    val articlesState: StateFlow<ArticlesState> get() = _articlesState
 
     init {
         getArticles()
@@ -21,12 +21,12 @@ class ArticleViewModel: BaseViewModel() {
         scope.launch {
             delay(1500)
 
-            _articleState.emit(ArticleState(error = "Something went wrong"))
+            _articlesState.emit(ArticlesState(error = "Something went wrong"))
 
             delay(1500)
 
             val fetchedArticles = fetchArticles()
-            _articleState.emit(ArticleState(articles = fetchedArticles))
+            _articlesState.emit(ArticlesState(articles = fetchedArticles))
         }
     }
 
