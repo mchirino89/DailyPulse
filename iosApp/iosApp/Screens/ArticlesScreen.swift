@@ -9,6 +9,27 @@
 import SwiftUI
 import shared
 
+extension ArticlesScreen {
+    @MainActor
+    final class ArticlesViewModelWrapper: ObservableObject {
+        let articlesViewModel: ArticlesViewModel
+        @Published var articlesState = ArticlesState
+
+        init() {
+            self.articlesViewModel = ArticlesViewModel()
+            self.articlesState = articlesViewModel.articlesState.value
+        }
+
+        func startObserving() {
+            Task {
+                for await newState in articlesViewModel.articlesState {
+                    self.articlesState = newState
+                }
+            }
+        }
+    }
+}
+
 struct ArticlesScreen: View {
     @ObservableObject private(set) var viewModel: ArticlesViewModelWrapper
 
