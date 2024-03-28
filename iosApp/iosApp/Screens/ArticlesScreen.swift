@@ -17,13 +17,13 @@ extension ArticlesScreen {
 
         init() {
             articlesViewModel = ArticleViewModel()
-            articlesState = articlesViewModel.articleState.value as! ArticleState
+            articlesState = articlesViewModel.articleState.value 
         }
 
         func startObserving() {
             Task {
-                for await articlesS in articlesViewModel.articleState {
-                    self.articlesState = articlesS
+                for await newState in articlesViewModel.articleState {
+                    self.articlesState = newState
                 }
             }
         }
@@ -106,7 +106,7 @@ struct ArticlesItemView: View {
             Text(article.title)
                 .font(.title)
                 .fontWeight(.bold)
-            Text(article.description)
+            Text(article.content)
             Text(article.date)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .foregroundColor(.gray)
