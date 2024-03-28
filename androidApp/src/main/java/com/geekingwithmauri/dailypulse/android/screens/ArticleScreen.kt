@@ -22,15 +22,15 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.geekingwithmauri.dailypulse.Articles.Article
-import com.geekingwithmauri.dailypulse.Articles.ArticlesViewModel
+import com.geekingwithmauri.dailypulse.Articles.ArticleViewModel
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 
 @Composable
-fun ArticleScreen(articlesViewModel: ArticlesViewModel) {
-    val articleState = articlesViewModel.articlesState.collectAsState()
+fun ArticleScreen(articlesViewModel: ArticleViewModel) {
+    val articleState = articlesViewModel.articleState.collectAsState()
 
     Column {
         AppBar()
@@ -40,7 +40,7 @@ fun ArticleScreen(articlesViewModel: ArticlesViewModel) {
         if (articleState.value.error != null)
             ErrorMessage(articleState.value.error!!)
         if (articleState.value.articles.isNotEmpty())
-            ArticleListView(articlesViewModel.articlesState.value.articles)
+            ArticleListView(articlesViewModel.articleState.value.articles)
     }
 }
 
